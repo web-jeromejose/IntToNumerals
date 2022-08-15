@@ -66,13 +66,13 @@ namespace IntToNumerals
             return sBuilder.ToString();
         }
 
-        private static List<NumeralFlags> Ranges()
+        private static List<NumeralRange> Ranges()
         {
-            var numeralRanges = new List<NumeralFlags> {
-                new NumeralFlags { IntNumber = 1000, RomanNumerals = 'M' },
-                new NumeralFlags { IntNumber = 100, RomanNumerals = 'C', MaxRomanNumerals = 'M', HalfRomanNumerals = 'D' },
-                new NumeralFlags { IntNumber = 10, RomanNumerals = 'X', MaxRomanNumerals = 'C', HalfRomanNumerals = 'L' },
-                new NumeralFlags { IntNumber = 1, RomanNumerals = 'I', MaxRomanNumerals = 'X', HalfRomanNumerals = 'V' }
+            var numeralRanges = new List<NumeralRange> {
+                new NumeralRange { IntNumber = 1000, RomanNumerals = 'M' },
+                new NumeralRange { IntNumber = 100, RomanNumerals = 'C', MaxRomanNumerals = 'M', HalfRomanNumerals = 'D' },
+                new NumeralRange { IntNumber = 10, RomanNumerals = 'X', MaxRomanNumerals = 'C', HalfRomanNumerals = 'L' },
+                new NumeralRange { IntNumber = 1, RomanNumerals = 'I', MaxRomanNumerals = 'X', HalfRomanNumerals = 'V' }
             };
             return numeralRanges;
         }
